@@ -1,0 +1,113 @@
+:root{
+    --maincolor:crimson;
+    --mainblack:rgb(0, 0, 0);
+    --mainwhite:rgb(255, 255, 255);
+}
+.lapcontener{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    background-color:var(--mainwhite);
+    padding: 100px 20px;
+}
+.card{
+    max-width:300px;
+   height:100%;
+   min-height:600px;
+    border:1px solid white;
+    border-radius:5px;
+    margin:20px 3px;
+    cursor: pointer;
+    position: relative;
+    }
+    .pric{
+        color:var(--mainblack);
+        font-size:30px;
+        margin-right: 10px;
+    }
+    .insted{
+        color:var(--mainblack);
+    }
+    .card-img-top{
+      width:100%;
+       max-height:200px;    
+    }
+    .card-body{
+    max-height: 500px;
+    padding:0 5%;
+    }
+    .rate{
+        display: flex;
+        align-items:center;
+        color: crimson;
+    }
+    .cardtext{
+        margin-top: 0;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 20px;
+        word-spacing: 2px;
+    text-overflow: ellipsis;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width:80%;
+    text-overflow: ellipsis;
+    }
+    .inf{
+        margin:0px;
+        display: flex;
+        justify-content:start;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .offers{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right:10px;
+    color:crimson;
+    }
+    .price{
+        font-weight:bolder;
+        font-size: 24px;
+        margin-right:10px;
+        color:rgb(0, 0, 0);
+    }
+    .finish{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    }
+    .finishleft{
+    flex:6;
+    }
+    .finshright{
+    flex: 6;
+    }
+    .finishleft p{
+        font-weight: bold;
+        font-size: 15px;
+        color:gray;
+    }
+    .Buy{
+    padding:5px;
+    background-color:crimson;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    cursor:pointer;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius:5px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .finshright p{
+        margin:10px 0;
+        color:rgb(0, 0, 0);
+    }
+    .marka{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    }

@@ -1,0 +1,49 @@
+:root{
+    --maincolor:crimson;
+    --mainblack:rgb(0, 0, 0);
+    --mainwhite:rgb(255, 255, 255);
+}
+.contener{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:90%;
+  position: absolute;
+  margin: 50px 50px;
+  color:var(--mainblack);
+}
+.des,.id,.prand,.price{
+ text-align: center;
+ font-size: 20px;
+ font-weight: bold;   
+ color:var(--mainblack);
+ padding: 10px;
+}
+.des{
+    width:500px;
+}
+.price{
+    color:var(--maincolor)
+}
+.contener h1{
+color:var(--maincolor);
+font-size: 50px;
+font-weight: bold;
+text-shadow: 2px 2px 5px var(--maincolor);
+}
+.clear,.delet{
+    padding:5px;
+    background-color:crimson;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    cursor:pointer;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius:5px;
+    text-decoration: none;
+   margin: 20px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
