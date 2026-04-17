@@ -332,21 +332,21 @@ function Mainpg() {
                                 </div>
                                 <div className="lastcenter">
                                     <div className="lastlefta">
-                                        <a href='#' rel='stylsheet'>category</a>
-                                        <a href='#' rel='stylsheet'>fashion</a>
-                                        <a href='#' rel='stylsheet'>sports</a>
-                                        <a href='#' rel='stylsheet'>tecnology</a>
-                                        <a href='#' rel='stylsheet'>man</a>
-                                        <a href='#' rel='stylsheet'>woman</a>
-                                        <a href='#' rel='stylsheet'>kids</a>
+                                        <Link to='/category' rel='stylsheet'>category</Link>
+                                        <Link to='/fashion' rel='stylsheet'>fashion</Link>
+                                        <Link to='/sports' rel='stylsheet'>sports</Link>
+                                        <Link to='/tecnology' rel='stylsheet'>tecnology</Link>
+                                        <Link to='/man' rel='stylsheet'>man</Link>
+                                        <Link to='/woman' rel='stylsheet'>woman</Link>
+                                        <Link to='/kids' rel='stylsheet'>kids</Link>
                                     </div>
                                     <div className="lastrighta">
-                                        <a href='#' rel='stylsheet'>compony</a>
-                                        <a href='#' rel='stylsheet'>FQA</a>
-                                        <a href='#' rel='stylsheet'>Help</a>
-                                        <a href='#' rel='stylsheet'>Contact us</a>
-                                        <a href='#' rel='stylsheet'>Affiliate program</a>
-                                        <a href='#' rel='stylsheet'>feedback</a>
+                                        <Link to='/compony' rel='stylsheet'>compony</Link>
+                                        <Link to='/FQA' rel='stylsheet'>FQA</Link>
+                                        <Link to='/Help' rel='stylsheet'>Help</Link>
+                                        <Link to='/Contact us' rel='stylsheet'>Contact us</Link>
+                                        <Link to='/Affiliate program' rel='stylsheet'>Affiliate program</Link>
+                                        <Link to='/feedback' rel='stylsheet'>feedback</Link>
                                     </div>
                                 </div>
                                 <div className="lastright">
