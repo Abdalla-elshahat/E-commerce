@@ -1,88 +1,175 @@
-.login{
+.login {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
-.wrapplogin{
+
+.wrapplogin {
     width: 70%;
     height: 70%;
-    background-color:rgb(241, 241, 241);
+    background-color: rgb(241, 241, 241);
     display: flex;
-    border-radius:10px;
+    border-radius: 10px;
 }
+
 .loginleft,
-.loginright{
+.loginright {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
 }
-.loginlogo{
+
+.loginlogo {
     margin: 10px 30px;
-    color:rgb(6, 97, 224);
+    color: rgb(6, 97, 224);
     font-size: 50px;
     text-transform: capitalize;
     font-weight: bold;
 }
-.des{
+
+.des {
     margin-left: 20px;
     line-height: 1.2;
-    color:rgb(63, 63, 63);
+    color: rgb(63, 63, 63);
 }
-.loginbox{
+
+.loginbox {
     background-color: white;
-height: 300px;
-display: flex;
-flex-direction: column;
-width: 70%;
-margin-left:100px;
-border-radius:10px;
-padding: 20px;
-justify-content: space-between;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    justify-content: space-between;
 }
-.inputlogin{
+
+.inputlogin {
     height: 30px;
-border-radius:10px;
-border: 1px solid gray;
-padding: 10px;
-font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+    font-size: 20px;
 }
-.inputlogin:focus{
+
+.inputlogin:focus {
     outline: none;
 }
-.btnlogin{
+
+.btnlogin {
     font-size: 20px;
     height: 50px;
-    background-color:rgb(6, 97, 224);
-    border:none;
-    color:white;
-    border-radius:10px;
+    background-color: rgb(6, 97, 224);
+    border: none;
+    color: white;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
 }
-.loginforget{
+
+.loginforget {
     text-align: center;
-    color:rgb(6, 97, 224);
+    color: rgb(6, 97, 224);
     cursor: pointer;
 }
-.newaccount{
+
+.newaccount {
     font-size: 20px;
     height: 50px;
-    background-color:rgb(11, 208, 11);
-    border:none;
-    color:white;
-    border-radius:10px;
+    background-color: rgb(11, 208, 11);
+    border: none;
+    color: white;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
 }
-.backicon{
-    position:relative;
-    top:0;
+
+.backicon {
+    position: relative;
+    top: 0;
     cursor: pointer;
-    color:rgb(6, 97, 224);
+    color: rgb(6, 97, 224);
 }
-.backicon:hover{
-    color:red;
+
+.backicon:hover {
+    color: red;
+}
+
+/* 📱 Tablet */
+@media (max-width: 992px) {
+
+    .wrapplogin {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .loginbox {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .loginlogo {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .des {
+        text-align: center;
+        margin: 0 20px;
+    }
+}
+
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+
+    .wrapplogin {
+        width: 95%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .loginleft {
+        display: none;
+        /* نخفي الجزء الشمال في الموبايل */
+    }
+
+    .loginright {
+        width: 100%;
+        align-items: center;
+    }
+
+    .loginbox {
+        width: 90%;
+        margin: 20px 0;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .inputlogin {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .btnlogin,
+    .newaccount {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .loginlogo {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+
+    .des {
+        font-size: 14px;
+    }
 }
