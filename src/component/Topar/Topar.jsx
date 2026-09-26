@@ -1,4 +1,4 @@
-import { LocalMall, Search, Store } from "@mui/icons-material";
+import { Close, LocalMall, Menu, Search, Store } from "@mui/icons-material";
 import './Topar.css'
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -38,11 +38,18 @@ function Topar() {
 
       <div className="toparcenter">
         {/* Hamburger icon for mobile view */}
-        <div className="menu-icon" onClick={() => setOpen(!open)}>
-          ☰
-        </div>
+        <button
+          type="button"
+          className="menu-icon"
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          aria-expanded={open}
+          aria-controls="primary-navigation"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <Close /> : <Menu />}
+        </button>
 
-        <nav className={`links ${open ? "show" : ""}`}>
+        <nav id="primary-navigation" className={`links ${open ? "show" : ""}`}>
           <NavLink to="/Home" className={({ isActive }) => (isActive ? "active" : "")} onClick={closeMenu}>
             Home
           </NavLink>

@@ -1,89 +1,110 @@
 .login {
-    width: 100vw;
-    height: 100vh;
     display: flex;
+    width: 100%;
+    min-height: calc(100vh - 72px);
     justify-content: center;
     align-items: center;
+    padding: 32px 18px;
+    background: var(--page-background, #f5f6f7);
 }
 
 .wrapplogin {
-    width: 70%;
-    height: 70%;
-    background-color: rgb(241, 241, 241);
-    display: flex;
-    border-radius: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+    width: min(920px, 100%);
+    min-height: 500px;
+    overflow: hidden;
+    border: 1px solid #e3e6e8;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 12px 36px rgba(22, 28, 34, 0.08);
 }
 
 .loginleft,
 .loginright {
     display: flex;
-    flex: 1;
+    min-width: 0;
     flex-direction: column;
     justify-content: center;
 }
 
+.loginleft {
+    padding: 48px;
+    background: #f0e7e7;
+}
+
+.loginright {
+    align-items: center;
+    padding: 44px;
+}
+
 .loginlogo {
-    margin: 10px 30px;
-    color: rgb(6, 97, 224);
-    font-size: 50px;
+    margin: 0 0 20px;
+    color: #b9283f;
+    font-size: 38px;
     text-transform: capitalize;
     font-weight: bold;
 }
 
 .des {
-    margin-left: 20px;
-    line-height: 1.2;
-    color: rgb(63, 63, 63);
+    margin: 0;
+    color: #555c62;
+    font-size: 15px;
+    line-height: 1.65;
 }
 
 .loginbox {
     background-color: white;
-    height: 300px;
+    min-height: 330px;
     display: flex;
     flex-direction: column;
-    width: 70%;
-    margin-left: 100px;
-    border-radius: 10px;
-    padding: 20px;
+    width: 100%;
+    max-width: 370px;
+    border-radius: 6px;
+    padding: 24px;
     justify-content: space-between;
+    gap: 14px;
 }
 
 .inputlogin {
     height: 30px;
-    border-radius: 10px;
-    border: 1px solid gray;
+    min-width: 0;
+    border-radius: 4px;
+    border: 1px solid #d9dde0;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .inputlogin:focus {
-    outline: none;
+    outline: 2px solid #b9283f;
+    outline-offset: 1px;
 }
 
 .btnlogin {
     font-size: 20px;
     height: 50px;
-    background-color: rgb(6, 97, 224);
+    background-color: #b9283f;
     border: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
 }
 
 .loginforget {
     text-align: center;
-    color: rgb(6, 97, 224);
+    color: #a32137;
     cursor: pointer;
 }
 
 .newaccount {
     font-size: 20px;
-    height: 50px;
-    background-color: rgb(11, 208, 11);
+    min-height: 46px;
+    background-color: #28766b;
     border: none;
     color: white;
-    border-radius: 10px;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -92,36 +113,33 @@
     position: relative;
     top: 0;
     cursor: pointer;
-    color: rgb(6, 97, 224);
+    color: #b9283f;
 }
 
 .backicon:hover {
-    color: red;
+    color: #82192a;
 }
 
 /* 📱 Tablet */
 @media (max-width: 992px) {
 
     .wrapplogin {
-        width: 90%;
-        height: auto;
-        flex-direction: column;
-        padding: 20px 0;
+        grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1.2fr);
+        min-height: 440px;
     }
 
     .loginbox {
-        width: 80%;
-        margin: 20px auto;
+        width: 100%;
+        margin: 0;
     }
 
     .loginlogo {
-        text-align: center;
-        font-size: 40px;
+        font-size: 34px;
     }
 
-    .des {
-        text-align: center;
-        margin: 0 20px;
+    .loginleft,
+    .loginright {
+        padding: 28px;
     }
 }
 
@@ -129,47 +147,53 @@
 /* 📱 Mobile */
 @media (max-width: 576px) {
 
+    .login {
+        min-height: calc(100vh - 64px);
+        padding: 20px 12px;
+    }
+
     .wrapplogin {
-        width: 95%;
-        height: auto;
-        border-radius: 5px;
+        display: block;
+        width: 100%;
+        min-height: 0;
+        border-radius: 6px;
     }
 
     .loginleft {
-        display: none;
-        /* نخفي الجزء الشمال في الموبايل */
+        display: block;
+        padding: 24px 22px 18px;
     }
 
     .loginright {
         width: 100%;
         align-items: center;
+        padding: 0 18px 22px;
     }
 
     .loginbox {
-        width: 90%;
-        margin: 20px 0;
-        height: auto;
-        padding: 15px;
-        gap: 10px;
+        min-height: 300px;
+        max-width: none;
+        padding: 0;
+        gap: 12px;
     }
 
     .inputlogin {
         font-size: 16px;
-        height: 40px;
+        min-height: 44px;
     }
 
     .btnlogin,
     .newaccount {
         font-size: 16px;
-        height: 45px;
+        min-height: 44px;
     }
 
     .loginlogo {
         font-size: 28px;
-        margin: 10px 0;
+        margin: 0 0 8px;
     }
 
     .des {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
